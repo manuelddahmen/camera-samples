@@ -170,6 +170,14 @@ class GalleryFragment internal constructor() : Fragment() {
                         .create().showImmersive()
             }
         }
+        fragmentGalleryBinding.effectButton.setOnClickListener {
+            mediaList.getOrNull(fragmentGalleryBinding.photoViewPager.currentItem)
+                ?.let { mediaFile -> {
+
+                    }
+                }
+        }
+
     }
 
     override fun onDestroyView() {
